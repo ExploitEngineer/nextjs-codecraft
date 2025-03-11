@@ -1,5 +1,21 @@
 import { notFound } from "next/navigation";
 
+// INFO: SSG (Static Site Generation)
+export async function generateStaticParams() {
+    // const response = await fetch('https://jsonplaceholdertypicode.com/todos');
+    // const data = await response.json()
+    // return data.map(({ id }) => {
+    //     ({ blog: `${id}` })
+    // })
+    return [
+        { blog: '1' },
+        { blog: '2' },
+        { blog: '3' },
+        { blog: '4' },
+        { blog: '5' }
+    ]
+}
+
 const page = ({ params }) => {
 
     const { blog } = params;
