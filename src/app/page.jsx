@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Page from './_components/page';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
                 <Link href="/services" className='decoration-0 text-lime-400 font-semibold text-lg'>Services</Link>
                 <Link href="/blogs" className='decoration-0 text-lime-400 font-semibold text-lg'>Blog</Link>
             </div>
+            <Page />
         </div>
     );
 }
