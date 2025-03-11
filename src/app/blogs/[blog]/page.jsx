@@ -1,3 +1,5 @@
+"use client"
+
 import { notFound } from "next/navigation";
 
 export const defaultParams = false;

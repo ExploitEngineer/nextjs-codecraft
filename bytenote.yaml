@@ -1,0 +1,13 @@
+1). Routing & navigation
+  <Link />
+2). Metadata
+3). Styling (Tailwind CSS)
+4). <Image />
+5). Client vs server components
+6). Server actions (POST/PUT/DELETE)
+7). Suspense and streaming
+8). Caching
+9). Static & dynamic rendering
+10). Middleware
+11). Folder structure
+12). Production build and deploying
