@@ -1,8 +1,6 @@
 import Link from "next/link";
 
-export default function Home(props) {
-
-    console.log(props);
+export default function Home() {
 
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">

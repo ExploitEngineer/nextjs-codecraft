@@ -1,0 +1,38 @@
+📦 your-project/
+├── 📁 public/               # Public assets (images, icons, etc.)
+│   └── favicon.ico
+├── 📁 src/                  # Source files (recommended for better structure)
+│   ├── 📁 app/              # App Router (for Next.js 13+)
+│   │   ├── 📁 api/          # API routes (server functions)
+│   │   │   └── 📁 auth/     # Example: Authentication API
+│   │   │       └── route.js
+│   │   ├── 📁 components/   # Reusable UI components
+│   │   │   └── Navbar.jsx
+│   │   ├── 📁 styles/       # Global styles or CSS Modules
+│   │   │   └── globals.css
+│   │   ├── 📁 utils/        # Utility functions/helpers
+│   │   │   └── fetchData.js
+│   │   ├── 📁 middleware/   # Middleware (if any)
+│   │   ├── 📁 pages/        # For older Next.js routing (optional)
+│   │   │   └── _app.jsx
+│   │   ├── 📁 dashboard/    # Example of nested routing (dynamic route)
+│   │   │   ├── 📁 settings/
+│   │   │   │   └── page.jsx
+│   │   │   └── page.jsx     # Dashboard main page
+│   │   ├── 📁 api/          # API routes (if using app directory API)
+│   │   ├── 📁 middleware/   # Middleware for handling requests
+│   │   └── page.jsx         # Home page
+│   │
+├── 📁 components/           # UI components shared across the app
+│   └── Button.jsx
+├── 📁 hooks/                # Custom React hooks
+│   └── useAuth.js
+├── 📁 lib/                  # Library files, configs, or utils
+│   └── prisma.js
+├── 📁 styles/               # Global styles (if not using CSS modules)
+│   └── globals.css
+├── .gitignore               # Files and folders to ignore in Git
+├── next.config.js           # Next.js configuration file
+├── package.json             # Project dependencies and scripts
+├── README.md                # Project description
+└── tailwind.config.js       # Tailwind CSS configuration file (if used)
