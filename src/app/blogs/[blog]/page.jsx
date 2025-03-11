@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 
+export const defaultParams = false;
+
 // INFO: SSG (Static Site Generation)
 export async function generateStaticParams() {
     // const response = await fetch('https://jsonplaceholdertypicode.com/todos');
