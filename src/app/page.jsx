@@ -10,6 +10,7 @@ export default function Home(props) {
             <div className="flex items-center gap-10">
                 <Link href="/about" className='decoration-0 text-lime-400 font-semibold text-lg'>About</Link>
                 <Link href="/services" className='decoration-0 text-lime-400 font-semibold text-lg'>Services</Link>
+                <Link href="/blogs" className='decoration-0 text-lime-400 font-semibold text-lg'>Blog</Link>
             </div>
         </div>
     );

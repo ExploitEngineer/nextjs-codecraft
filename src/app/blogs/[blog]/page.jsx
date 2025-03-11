@@ -1,6 +1,6 @@
-const page = async ({ params }) => {
+const page = ({ params }) => {
 
-    const { blog } = await params;
+    const { blog } = params;
 
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">
