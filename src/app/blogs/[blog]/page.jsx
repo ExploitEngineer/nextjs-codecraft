@@ -1,6 +1,12 @@
+import { notFound } from "next/navigation";
+
 const page = ({ params }) => {
 
     const { blog } = params;
+
+    if (!/^\d+$/.test(blog)) {
+        notFound();
+    }
 
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">
