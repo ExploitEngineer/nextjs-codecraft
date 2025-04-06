@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+my-new-app/.gitignore
+my-new-app/node_modules
+my-new-app/.next/
+my-new-app/out/
