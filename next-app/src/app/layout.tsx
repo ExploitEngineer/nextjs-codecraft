@@ -25,9 +25,25 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col justify-between`}
             >
+                <header className="flex items-center justify-center text-black font-mono font-semibold text-xl"
+                    style={{
+                        backgroundColor: 'lightblue',
+                        padding: '1rem',
+                    }}
+                >
+                    <p>Header</p>
+                </header>
                 {children}
+                <footer className="flex items-center justify-center text-black font-mono font-semibold text-xl"
+                    style={{
+                        backgroundColor: 'ghostwhite',
+                        padding: '1rem',
+                    }}
+                >
+                    <p>Footer</p>
+                </footer>
             </body>
         </html>
     );
