@@ -27,7 +27,9 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
+                <header className='w-full py-8 bg-linear-90 to-blue-500 from-purple-500 flex items-center justify-center text-white font-semibold font-mono text-2xl'>Header</header>
                 {children}
+                <footer className='w-full py-8 bg-linear-90 to-purple-500 from-blue-500 flex items-center justify-center text-white font-semibold font-mono text-2xl'>Footer</footer>
             </body>
         </html>
     );
