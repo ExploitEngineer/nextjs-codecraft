@@ -1,0 +1,32 @@
+
+import { Geist, Geist_Mono } from "next/font/google";
+import "@/app/globals.css";
+
+const geistSans = Geist({
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
+});
+
+
+
+export default function AuthLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <html lang="en">
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            >
+                {children}
+                <footer className='w-full py-8 bg-linear-90 to-purple-500 from-blue-500 flex items-center justify-center text-white font-semibold font-mono text-2xl'>Footer</footer>
+            </body>
+        </html>
+    );
+}
