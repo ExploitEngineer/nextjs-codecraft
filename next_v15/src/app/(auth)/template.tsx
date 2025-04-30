@@ -2,7 +2,9 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { usePathname } from "next/navigation";
+import { useState } from 'react';
 import Link from 'next/link';
 import "@/app/assets/css/globals.css";
 
@@ -28,12 +30,18 @@ export default function AuthLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+
     const pathname = usePathname();
+    const [input, setInput] = useState("");
+
     return (
         <html lang="en">
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
+                <div>
+                    <Input value={input} onChange={(e) => { setInput(e.target.value) }} />
+                </div>
 
                 {
                     navLinks.map((elem, key) => {
