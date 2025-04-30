@@ -16,6 +16,16 @@ export default function Home() {
                         <Button className="bg-zinc-700 py-6 w-full font-semibold text-lg">Products</Button>
                     </Link>
                 </div>
+                <div>
+                    <Link href='/articles/breaking-news-123?lang=en'>
+                        <Button className="bg-zinc-700 py-6 w-full font-semibold text-lg">Read in English</Button>
+                    </Link>
+                </div>
+                <div>
+                    <Link href='/articles/breaking-news-123?lang=fr'>
+                        <Button className="bg-zinc-700 py-6 w-full font-semibold text-lg">Read in French</Button>
+                    </Link>
+                </div>
             </div>
         </div>
     );
