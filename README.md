@@ -6,7 +6,7 @@ A comprehensive guide for mastering **Next.js** and **React**, from the basics t
 
 ## 📂 Repository
 
-**GitHub Repo:** [ExploitEngineer/nextjs-react-guide](https://github.com/ExploitEngineer/nextjs-react-guide)
+**GitHub Repo:** [ExploitEngineer/nextjs-react-guide](https://github.com/ExploitEngineer/nextjs-codecraft.git)
 
 ---
 
@@ -37,10 +37,10 @@ A comprehensive guide for mastering **Next.js** and **React**, from the basics t
 
 ```bash
 # Clone the repository
-git clone https://github.com/ExploitEngineer/nextjs-react-guide.git
+git clone https://github.com/ExploitEngineer/nextjs-codecraft.git
 
 # Navigate to the project directory
-cd nextjs-react-guide
+cd nextjs-codecraft
 
 # Install dependencies
 npm install
@@ -58,7 +58,7 @@ npm run dev
 ## 📁 Structure Overview
 
 ```
-nextjs-react-guide/
+nextjs-codecraft/
 ├── components/        # Shared React components
 ├── pages/             # Next.js pages and API routes
 ├── public/            # Static assets
