@@ -41,7 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 
-next_v15/.gitignore
-next_v15/node_modules
-next_v15/.next/
-next_v15/out/
+**/.gitignore
+**/node_modules
+**/.next/
+**/out/
