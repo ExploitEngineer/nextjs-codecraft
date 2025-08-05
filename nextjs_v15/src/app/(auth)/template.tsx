@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 interface Links {
   name: string;
@@ -20,9 +21,17 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   const pathname: string = usePathname();
+  const [input, setInput] = useState<string>("");
 
   return (
     <div>
+      <div>
+        <input
+          className="border mt-3 rounded-lg py-2 px-6 ms-2"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+      </div>
       <div className="flex items-center gap-2 py-10 font-mono">
         <h1 className="font-semibold text-white">Navbar Links:</h1>
         {navLinks.map((link: Links, idx: number) => {
