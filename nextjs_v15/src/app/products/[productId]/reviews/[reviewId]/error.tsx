@@ -30,3 +30,10 @@ export default function ErrorBoundary({
     </div>
   );
 }
+
+{
+  /*
+Error handling precision
+handling errors in nested files
+*/
+}
