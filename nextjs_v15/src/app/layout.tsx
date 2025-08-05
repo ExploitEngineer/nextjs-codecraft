@@ -39,3 +39,15 @@ export default function RootLayout({
     </html>
   );
 }
+
+{
+  /*
+INFO: Component Hierarchy
+1. layout.tsx
+2. template.tsx
+3. error.tsx
+4. loading.tsx
+5. not-found.tsx
+6. page.tsx
+*/
+}
