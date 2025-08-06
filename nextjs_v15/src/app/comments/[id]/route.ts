@@ -25,11 +25,30 @@ export async function PATCH(
   const { text } = body;
 
   const index = comments.findIndex((comment) => comment.id === parseInt(id));
+
   if (index === -1) {
     return Response.json({
-      message: "no comment with this id to perform this task",
+      message: "no comment with this id to perform patch operation",
     });
   }
   comments[index].text = text;
   return Response.json(comments[index]);
+}
+
+export async function DELETE(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const { id } = await params;
+  const index = comments.findIndex((comment) => comment.id === parseInt(id));
+
+  if (index === -1) {
+    return Response.json({
+      message: "no comment with this id to perform delete operation",
+    });
+  }
+
+  const deletedComment = comments[index];
+  comments.splice(index, 1);
+  return Response.json(deletedComment);
 }
