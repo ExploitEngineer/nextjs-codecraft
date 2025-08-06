@@ -15,3 +15,13 @@ export default function F1() {
     </>
   );
 }
+
+{
+  /*
+INFO: Intercepting Routes CheatSheet:
+(.) to match segments on the same level
+(..) to match segments one level above
+(..)(..) to match segments two level above
+(...) to match segments from the root app directory
+*/
+}
